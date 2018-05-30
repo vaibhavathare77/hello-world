@@ -1,9 +1,16 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'normal'
+    }
+
+  }
   stages {
     stage('file') {
       steps {
         echo 'my first pipeline.'
+        sh '''ls -l /home/vagrant
+echo $vaibhavathare77'''
       }
     }
   }
