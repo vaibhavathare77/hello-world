@@ -9,8 +9,8 @@ pipeline {
     stage('file') {
       steps {
         echo 'my first pipeline.'
-	pwd
-        sh '''ls -l /home/vagrant
+        sh '''pwd
+	ls -l /home/vagrant
 echo $vaibhavathare77'''
       }
     }
